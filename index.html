@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <title>Music Radio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="text">
+      <div>
+        <span class="marquee-text"></span>
+        <span class="marquee-text"></span>
+      </div>
+    </div>
+
+    <div class="player" id="player">
+      <audio src="music/roll.mp3" id="audio"></audio>
+
+      <div class="player-btn">
+        <i class="fas fa-backward action-btn" id="prev"></i>
+        <i class="fas fa-play action-btn action-btn-big" id="play"></i>
+        <i class="fas fa-forward action-btn" id="next"></i>
+      </div>
+
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="image/waters.jpg" alt="music-cover" id="cover" class="cover" />
+      <h2 class="title"></h2>
+      <p class="info"></p>
+    </div>
+
+    <div class="albums">
+      <i id="album1-btn" class="fas fa-x action-btn hover"></i>
+      <i id="album2-btn" class="fas fa-x action-btn hover"></i>
+    </div>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
